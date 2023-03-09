@@ -1,0 +1,199 @@
+* {
+    margin: 0%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 2px 3px 5px #00000094;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #3bb170;
+}
+
+.content-options {
+    display: block;
+    width: 50%;
+    min-width: 300px;
+    height: max-content;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    top: 10%;
+    background-color: greenyellow;
+    border-radius: 25px 50px;
+    font-size: 2rem;
+    box-shadow: 5px 10px 5px #00000094;
+}
+
+.div-options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2.5rem;
+    
+
+}
+
+.label-container {
+    min-width: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    box-shadow: 2px 3px 5px #00000094;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    align-items: center;
+    color: black;
+}
+
+.label-desconto {
+    margin-right: 10px;
+}
+
+#acrescimo,
+#desconto {
+    font-size: 2rem;
+    background-color: inherit;
+    border: solid 1px black;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: green;
+    opacity: 0.6; 
+}
+
+#acrescimo:hover,
+#desconto:hover {
+    scale: 1.1;
+    opacity: 1;
+    border: solid 1px white ;
+    transition: ease-in 100ms;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 45px;
+    border-radius: 5px;
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.btnCalc-acrescimo,
+.btnCalc-desconto,
+.btnVoltarDesc,
+.btnVoltarAcr {
+    width: max-content;
+    font-size: 2rem;
+    background-color: inherit;
+    border: solid 1px black;
+    margin: 40px 20px 40px 0px;
+    align-self: center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btnCalc-acrescimo,
+.btnCalc-desconto{
+    background-color: green;
+    color: white;
+}
+
+.btnVoltarDesc,
+.btnVoltarAcr{
+   background-color: red;
+   color: white;
+}
+
+.btnCalc-acrescimo:hover,
+.btnCalc-desconto:hover,
+.btnVoltarDesc:hover,
+.btnVoltarAcr:hover {
+    scale: 1.1;
+    opacity: 1;
+    transition: ease-in 100ms;
+}
+
+.form-container-desconto {
+    display: none;
+    flex-wrap: nowrap;
+    width: 50%;
+    min-width: 300px;
+    height: max-content;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    top: 10%;
+    background-color: greenyellow;
+    border-radius: 25px 50px;
+    font-size: 2rem;
+}
+
+.form-container-acrescimo {
+    display: none;
+    flex-wrap: nowrap;
+    width: 50%;
+    min-width: 300px;
+    height: max-content;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    top: 10%;
+    background-color: greenyellow;
+    border-radius: 25px 50px;
+    font-size: 2rem;
+}
+
+.valorA,
+.valorD,
+.porcentagem-desconto,
+.porcentagem-acrescimo {
+    width: 100px;
+    height: 30px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+#valError,
+#porcentError{
+    box-shadow: 0 0 0.5em red;
+    position:relative;
+    animation: shake 200ms linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0% { left: 0rem; }
+    25% { left: 0.5rem; }
+    75% { left: -0.5rem; }
+    100% { left: 0rem; }
+}
+
+footer{
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}

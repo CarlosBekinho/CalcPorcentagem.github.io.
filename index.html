@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+
+    <title>Calculadora de Porcentagem</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Porcentagem</h1>
+    </header>
+    <section class="container">
+        <div class="content-options">
+            <h1>Escolha a Opção de Porcentagem</h1>
+
+            <div class="div-options">
+                <div class="label-container">Acréscimo:</label>
+                    <input id="acrescimo" type="button" value="+">
+                </div>
+                <div class="label-container">
+
+                    <label class="label-inicio">Desconto:</label>
+                    <input id="desconto" type="button" value="-">
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="form-container-acrescimo">
+            <form>
+                <div class="label-container">
+
+                    <label class="label-valor" >insira o valor (R$)</label>
+                    <input class="valorA" type="number" placeholder="R$0,00" onchange="removeAttribute('id','valError')"  >
+                </div>
+
+                <div class="label-container">
+
+                    <label class="label-acrescimo" .porcentagem-acrescimo" >insira o acréscimo (%)</label>
+                    <input class="porcentagem-acrescimo" type="number"  min="0" max="100" placeholder='0%'
+                        onKeyPress="if(this.value.length==4) return false;" onchange="removeAttribute('id','porcentError')" >
+                </div>
+
+
+                <div class="containerBtn">
+
+                    <input class="btnCalc-acrescimo" type="button" value="Calcular">
+                    <input class="btnVoltarAcr" type="button" value="voltar">
+                </div>
+
+
+            </form>
+            <h1 class="respAcr"></h1>
+        </div>    
+        <div class="form-container-desconto">
+            <form>
+                <div class="label-container">
+
+                    <label class="label-valor" >insira o valor (R$)</label>
+                    <input class="valorD" type="number" placeholder="R$0,00" onchange="removeAttribute('id','valError')">
+                </div>
+
+                <div class="label-container">
+
+                    <label class="label-desconto" >insira o desconto (%)</label>
+                    <input class="porcentagem-desconto" type="number" min="0" max="100" placeholder='0%'
+                        onKeyPress="if(this.value.length==4) return false;" onchange="removeAttribute('id','porcentError')">
+                </div>
+
+
+                <div class="containerBtn">
+
+                    <input class="btnCalc-desconto" type="button" value="Calcular">
+                    <input class="btnVoltarDesc" type="button" value="voltar">
+                </div>
+
+
+            </form>
+
+            <h1 class="respDesc"></h1>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CarlosBekinho</p>
+    </footer>
+
+
+</body>
+
+</html>
